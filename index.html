@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Taller 24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>Taller 24: Recta Numérica</h1>
+            <div id="puntuacion">Puntos: <span id="puntos-val">0</span></div>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2 id="numero-display">Cargando...</h2>
+                
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr><th>N</th><th>Z</th><th>Q</th><th>I</th><th>R</th></tr>
+                        </thead>
+                        <tbody id="tabla-reales">
+                            <tr>
+                                <td onclick="marcar(this, 'N')"></td>
+                                <td onclick="marcar(this, 'Z')"></td>
+                                <td onclick="marcar(this, 'Q')"></td>
+                                <td onclick="marcar(this, 'I')"></td>
+                                <td onclick="marcar(this, 'R')"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="btn-app" onclick="verificarMatriz()">Verificar Clasificación</button>
+            </div>
+
+            <div id="seccion-recta" class="card oculto">
+                <h3>Ubica el número en la recta</h3>
+                <canvas id="rectaCanvas" width="400" height="100"></canvas>
+                <p id="instruccion-recta">Toca la posición aproximada en la recta</p>
+            </div>
+
+            <div id="feedback-container">
+                <p id="feedback-texto"></p>
+                <button id="btn-siguiente" class="btn-app" style="display:none; background:#2196f3;" onclick="proximoEjercicio()">Siguiente Desafío ➔</button>
+            </div>
+        </main>
+    </div>
+    <script src="taller24.js"></script>
+</body>
+</html>

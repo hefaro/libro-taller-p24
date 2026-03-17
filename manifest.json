@@ -1,0 +1,21 @@
+{
+  "name": "Suite Taller 24 - Reales",
+  "short_name": "Taller24",
+  "description": "Exploración interactiva de Números Reales - Colegio Narciso Cabal",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4caf50",
+  "icons": [
+    {
+      "src": "icono_Calculadora.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icono_Calculadora.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
